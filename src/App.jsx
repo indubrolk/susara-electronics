@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { Menu, X, Zap, Wrench, Phone, Mail, MapPin, Clock, CheckCircle, ChevronRight } from 'lucide-react';
+import Map from './components/map';
+
+
 
 export default function TechnicianWebsite() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +38,7 @@ export default function TechnicianWebsite() {
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center space-x-2">
                             <Zap className="w-8 h-8 text-blue-600" />
-                            <span className="text-xl font-bold text-gray-900">TechPro Solutions</span>
+                            <span className="text-xl font-bold text-gray-900">SUSARA Electronics</span>
                         </div>
 
                         {/* Desktop Menu */}
@@ -206,6 +209,13 @@ export default function TechnicianWebsite() {
                     </div>
                 </div>
             </section>
+
+            <div id='map' className='text-3xl sm:text-4xl font-bold text-gray-900 mb-4'>
+                <h1>Locate Us</h1>
+                <Map />
+            </div>
+
+            
 
             {/* Footer */}
             <footer className="bg-gray-900 text-white py-8">
