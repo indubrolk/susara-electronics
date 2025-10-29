@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Zap, Wrench, Phone, Mail, MapPin, Clock, CheckCircle, ChevronRight } from 'lucide-react';
 import Map from './components/map';
 import Preloader from './components/Preloader';
+import Carousel from './components/carousel';
 
 
 export default function TechnicianWebsite() {
@@ -141,6 +142,8 @@ export default function TechnicianWebsite() {
                         </div>
                     </section>
 
+
+
                     {/* Services Section */}
                     <section id="services" className="py-20">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,6 +173,13 @@ export default function TechnicianWebsite() {
                                     </div>
                                 ))}
                             </div>
+                        </div>
+                    </section>
+
+                    <section id="carousel" className="py-20">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <Carousel/>
+
                         </div>
                     </section>
 
