@@ -5,7 +5,7 @@ export const map = () => {
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
     <div className="h-96 w-full">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841741087294!2d-73.98823492346654!3d40.75889097138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1698765432109!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d149194.53121560547!2d80.05609980873544!3d7.584492318025548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32fdd3df314ed%3A0x5ce98b5543226e09!2sSusara%20Electronics!5e1!3m2!1sen!2slk!4v1761709692181!5m2!1sen!2slk"
             width="100%"
             height="100%"
             style={{ border: 0 }}
