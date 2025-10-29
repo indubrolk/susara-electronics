@@ -240,28 +240,31 @@ export default function TechnicianWebsite() {
                                 <div className="bg-white rounded-lg p-6 shadow-md text-center">
                                     <Phone className="w-12 h-12 text-blue-600 mx-auto mb-4"/>
                                     <h3 className="font-bold text-gray-900 mb-2">Phone</h3>
-                                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                                    <p className="text-gray-600">+94 77 081 8427</p>
                                     <p className="text-sm text-gray-500 mt-1">Available 24/7</p>
                                 </div>
                                 <div className="bg-white rounded-lg p-6 shadow-md text-center">
                                     <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4"/>
                                     <h3 className="font-bold text-gray-900 mb-2">Email</h3>
-                                    <p className="text-gray-600">info@techprosolutions.com</p>
+                                    <p className="text-gray-600">susaraelectronics@gmail.com</p>
                                     <p className="text-sm text-gray-500 mt-1">We respond within 24hrs</p>
                                 </div>
                                 <div className="bg-white rounded-lg p-6 shadow-md text-center">
                                     <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4"/>
                                     <h3 className="font-bold text-gray-900 mb-2">Location</h3>
-                                    <p className="text-gray-600">123 Tech Street</p>
+                                    <p className="text-gray-600">Susara Electronics, Kalugamuwa Road, Kalagaha Panadaragama</p>
                                     <p className="text-gray-600">City, State 12345</p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
+
+                    <div className="text-center mb-12">
                     <div id='map' className='text-3xl sm:text-4xl font-bold text-gray-900 mb-4'>
                         <h1>Locate Us</h1>
                         <Map/>
+                    </div>
                     </div>
 
 
@@ -270,10 +273,10 @@ export default function TechnicianWebsite() {
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                             <div className="flex items-center justify-center space-x-2 mb-4">
                                 <Zap className="w-6 h-6 text-blue-400"/>
-                                <span className="text-xl font-bold">TechPro Solutions</span>
+                                <span className="text-xl font-bold">SUSARA Electronics</span>
                             </div>
                             <p className="text-gray-400 mb-2">Professional Electrical & Mechanical Services</p>
-                            <p className="text-gray-500 text-sm">© 2025 TechPro Solutions. All rights reserved.</p>
+                            <p className="text-gray-500 text-sm">© 2025 SUSARA Electronics. All rights reserved.</p>
                         </div>
                     </footer>
                 </div>
