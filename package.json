@@ -1,5 +1,6 @@
 {
   "homepage": "https://indubrolk.github.io/susara-electronics",
+  "name": "my-tech-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
