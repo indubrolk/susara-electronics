@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+.nav-menu {
+    position: relative;
+    display: inline-block;
+}
+.nav-menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #eab308;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu:hover::after {
+    width: 100%;
+}

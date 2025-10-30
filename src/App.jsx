@@ -51,34 +51,35 @@ export default function TechnicianWebsite() {
     };
 
     return (
-
         <>
             <Preloader show={loading} />
 
             <main className={loading ? 'pointer-events-none select-none min-h-dvh blur-sm' : ''}>
+
                 <div className="min-h-screen bg-gray-50">
+
                     {/* Navigation */}
                     <nav className="bg-white shadow-md fixed w-full top-0 z-50">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex justify-between items-center h-16">
-                                <div className="flex items-center space-x-2">
-                                    <Zap className="w-8 h-8 text-blue-600"/>
-                                    <span className="text-xl font-bold text-gray-900">SUSARA Electronics</span>
+                                <div className="cursor-pointer flex items-center space-x-2">
+                                    <Zap className="w-8 h-8 text-yellow-500"/>
+                                    <span className="text-2xl font-bold text-gray-900">SUSARA Electronics</span>
                                 </div>
 
                                 {/* Desktop Menu */}
                                 <div className="hidden md:flex space-x-8">
                                     <button onClick={() => scrollToSection('home')}
-                                            className="text-gray-700 hover:text-blue-600 transition">Home
+                                            className="nav-menu font-bold text-lg text-gray-700">Home
                                     </button>
                                     <button onClick={() => scrollToSection('services')}
-                                            className="text-gray-700 hover:text-blue-600 transition">Services
+                                            className="nav-menu  font-bold text-lg text-gray-700">Services
                                     </button>
                                     <button onClick={() => scrollToSection('about')}
-                                            className="text-gray-700 hover:text-blue-600 transition">About
+                                            className="nav-menu  font-bold text-lg text-gray-700">About
                                     </button>
                                     <button onClick={() => scrollToSection('contact')}
-                                            className="text-gray-700 hover:text-blue-600 transition">Contact
+                                            className="nav-menu font-bold text-lg text-gray-700">Contact
                                     </button>
                                 </div>
 
@@ -97,16 +98,16 @@ export default function TechnicianWebsite() {
                             <div className="md:hidden bg-white border-t">
                                 <div className="px-4 py-4 space-y-3">
                                     <button onClick={() => scrollToSection('home')}
-                                            className="block w-full text-left text-gray-700 hover:text-blue-600">Home
+                                            className="block w-full text-left text-gray-700 hover:text-white hover:bg-yellow-500">Home
                                     </button>
                                     <button onClick={() => scrollToSection('services')}
-                                            className="block w-full text-left text-gray-700 hover:text-blue-600">Services
+                                            className="block w-full text-left text-gray-700 hover:text-white hover:bg-yellow-500">Services
                                     </button>
                                     <button onClick={() => scrollToSection('about')}
-                                            className="block w-full text-left text-gray-700 hover:text-blue-600">About
+                                            className="block w-full text-left text-gray-700 hover:text-white hover:bg-yellow-500">About
                                     </button>
                                     <button onClick={() => scrollToSection('contact')}
-                                            className="block w-full text-left text-gray-700 hover:text-blue-600">Contact
+                                            className="block w-full text-left text-gray-700 hover:text-white hover:bg-yellow-500">Contact
                                     </button>
                                 </div>
                             </div>
@@ -292,6 +293,6 @@ export default function TechnicianWebsite() {
                 </div>
 
             </main>
-            </>
-            );
-            }
+        </>
+        );
+    }
