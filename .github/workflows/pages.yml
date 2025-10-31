@@ -31,11 +31,11 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
       - name: Install dependencies
-        working-directory: my-tech-website
+        working-directory: susara-electronics
         run: npm ci
 
       - name: Build
-        working-directory: my-tech-website
+        working-directory: susara-electronics
         run: npm run build
 
       - name: Upload artifact
