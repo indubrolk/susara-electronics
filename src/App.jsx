@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Zap, Wrench, Phone, Mail, MapPin, Clock, CheckCircle, ChevronRight } from 'lucide-react';
-import Map from './components/map';
-import Preloader from './components/Preloader';
-import Carousel from './components/carousel';
+import Map from './component/map.jsx';
+import Preloader from './component/Preloader';
+import Carousel from './component/carousel';
 
 
 export default function TechnicianWebsite() {
