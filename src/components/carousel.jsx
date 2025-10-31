@@ -5,27 +5,27 @@ export default function Carousel() {
     const slides = [
         {
             id: 1,
-            title: 'Summer Collection',
+            title: 'Industrial Panel Board Wiring',
             description: 'Discover the latest trends for the season',
-            color: 'from-blue-500 to-purple-600'
+            src: '/Images/img1.jpg'
         },
         {
             id: 2,
-            title: 'New Arrivals',
-            description: 'Fresh styles just dropped',
-            color: 'from-pink-500 to-orange-500'
+            title: 'Night Shot',
+            description: 'Captured in low light',
+            src: '/Images/PXL_20250506_071808078.NIGHT.jpg'
         },
         {
             id: 3,
-            title: 'Limited Edition',
-            description: 'Exclusive pieces you won\'t find anywhere else',
-            color: 'from-green-500 to-teal-600'
+            title: 'City Lights',
+            description: 'A calm evening scene',
+            src: '/Images/PXL_20250513_113937739.NIGHT.jpg'
         },
         {
             id: 4,
-            title: 'Sale Event',
-            description: 'Up to 50% off selected items',
-            color: 'from-red-500 to-pink-600'
+            title: 'New Arrivals',
+            description: 'Fresh styles just dropped',
+            src: '/Images/PXL_20241228_080151790.jpg'
         }
     ];
 
@@ -55,8 +55,8 @@ export default function Carousel() {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-white p-4">
-            <div className="w-full max-w-4xl">
+        <div className="flex items-center mt-0 rounded-xl justify-center min-h-screen bg-white p-10">
+            <div className="max-w-full">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                     {/* Slides Container */}
                     <div
@@ -64,13 +64,19 @@ export default function Carousel() {
                         style={{ transform: `translateX(-${current * 100}%)` }}
                     >
                         {slides.map((slide) => (
-                            <div
-                                key={slide.id}
-                                className={`min-w-full h-96 bg-gradient-to-br ${slide.color} flex items-center justify-center`}
-                            >
-                                <div className="text-center text-white px-8">
-                                    <h2 className="text-5xl font-bold mb-4">{slide.title}</h2>
-                                    <p className="text-xl opacity-90">{slide.description}</p>
+                            <div key={slide.id} className="min-w-full h-96 relative">
+                                <img
+                                    src={slide.src}
+                                    alt={slide.title}
+                                    className="w-full h-full object-cover"
+                                    loading="eager"
+                                />
+                                <div className="absolute inset-0 bg-black/30" />
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="text-center text-white px-8 drop-shadow">
+                                        <h2 className="text-5xl font-bold mb-4">{slide.title}</h2>
+                                        <p className="text-xl opacity-90">{slide.description}</p>
+                                    </div>
                                 </div>
                             </div>
                         ))}

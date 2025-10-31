@@ -115,7 +115,7 @@ export default function TechnicianWebsite() {
                     </nav>
 
                     {/* Hero Section */}
-                    <section id="home" className="pt-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+                    <section id="home" className="pt-16 bg-gradient-to-br from-orange-100 to-blue-950 text-white">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                             <div className="text-center">
                                 <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -192,7 +192,7 @@ export default function TechnicianWebsite() {
                                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Why Choose
                                         Us?</h2>
                                     <p className="text-gray-600 mb-6">
-                                        With over 15 years of experience, we've built a reputation for excellence in
+                                        With over 30 years of experience, we've built a reputation for excellence in
                                         electrical and mechanical services. Our certified technicians are committed to
                                         delivering quality workmanship and exceptional customer service.
                                     </p>
@@ -271,9 +271,9 @@ export default function TechnicianWebsite() {
                     </section>
 
 
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12 p-15">
                     <div id='map' className='text-3xl sm:text-4xl font-bold text-gray-900 mb-4'>
-                        <h1>Locate Us</h1>
+                        <h1 className="mb-10">Locate Us</h1>
                         <Map/>
                     </div>
                     </div>
