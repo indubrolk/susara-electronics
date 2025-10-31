@@ -31,17 +31,17 @@ jobs:
           cache-dependency-path: '**/package.json'
 
       - name: Install dependencies
-        working-directory: susara-electronics/dist
+        working-directory: 'susara-electronics'
         run: npm ci
 
       - name: Build
-        working-directory: susara-electronics/dist
+        working-directory: 'susara-electronics'
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: susara-electronics/dist
+          path: 'susara-electronics/dist'
 
   deploy:
     environment:
